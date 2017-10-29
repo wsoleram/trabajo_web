@@ -38,14 +38,11 @@
 	    
     osm.addTo(map);
 	    
-	    
-    
-	    
-          	    
-       var cantonescr = L.geoJson(cantones, {
+         	    
+      var cantonescr = L.geoJson(cantones, {
        style: function (feature) {
 	  return {
-          fillColor:'#0000ff'
+          fillColor:'#0000ff',
           weight:0.5,          
 	  };
         }
@@ -62,6 +59,7 @@
        var overlays = {
        "Cantones del Pais": cantonescr      
       };
+	    
       L.control.layers(baseLayers, overlays).addTo(map);	       
       L.control.mousePosition().addTo(map);
     

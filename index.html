@@ -47,14 +47,14 @@
 	       d > 150000 ? '#ef3b2c' :
 	       d > 250000 ? '#fb6a4a' :
 	                  ? '#fc9272' ;
-       }
+       },
 	    
           	    
        cantonescr = L.geoJson(cantones, {
        style: function (feature) {
 	  return {
-          fillColor: color(feature.properties.NCANTON)
-          weight:0.5		  
+          fillColor:'#0000ff'
+          color: '#ffffff'		  
           };
         }
       }).addTo(map);	    

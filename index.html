@@ -49,18 +49,7 @@
 	                  ? '#fc9272' ;
        }
 	    
-        function poblacion_total(feature, layer) {
-	var popupContent = "";
-	if (feature.properties && feature.properties.NCANTON) {
-	  popupContent += feature.properties.NCANTON;
-	}
-       
-	layer.bindPopup(popupContent);
-        },	    
-   
-       onEachFeature: poblacion_total
-	    
-    	    
+          	    
        cantonescr = L.geoJson(cantones, {
        style: function (feature) {
 	  return {

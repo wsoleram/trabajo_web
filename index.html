@@ -56,6 +56,9 @@
 	if (feature.properties && feature.properties.POB_2011_T) {
 	  popupContent += feature.properties.POB_2011_T;
 	}
+	if (feature.properties && feature.properties.NCANTON) {
+	  popupContent += feature.properties.NCANTON;
+	}	
        	layer.bindPopup(popupContent);
       }
 	    

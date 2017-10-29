@@ -51,16 +51,16 @@
 	
       cantonescr.addTo(map); 
 	    
-	function onEachFeature(feature, layer) {
+	function poblacion(feature, layer) {
 	var popupContent = "";
-	if (feature.properties && feature.properties.NCANTON) {
-	  popupContent += feature.properties.NCANTON;
+	if (feature.properties && feature.properties.POB_2011_T) {
+	  popupContent += feature.properties.POB_2011_T;
 	}
        	layer.bindPopup(popupContent);
       },
 	    
-      onEachFeature: onEachFeature
-      }).addTo(map);
+      onEachFeature: poblacion
+   
     	   
        var baseLayers = {
        "OpenStreetMap":osm,

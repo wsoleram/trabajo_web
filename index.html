@@ -54,7 +54,8 @@
        style: function (feature) {
 	  return {
           fillColor:'#0000ff'
-          color: '#ffffff'		  
+          weight:0.5,
+          fillColor: color(feature.properties.NCANTON)  
           };
         }
       }).addTo(map);	    
